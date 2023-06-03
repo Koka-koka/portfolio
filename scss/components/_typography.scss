@@ -1,3 +1,4 @@
+@use '../custom' as *;
 .display-2{
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -12,7 +13,13 @@
     &--description {
         font-size: 1rem;
         display: block;
-        margin-top: 1.2rem;     
+        margin-top: 1.2rem;   
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 1.4rem;
+            display: inline-block;
+        }
     }
+
 }
 
