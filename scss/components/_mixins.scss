@@ -21,3 +21,10 @@
     justify-content: center;
     align-items: center;
 }
+
+// Transition
+
+@mixin transitionProperty {
+    transition-duration: 1s;
+    transition-property: all;
+}
